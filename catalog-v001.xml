@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1426861040224" name="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19" uri="ontology.owl"/>
+    </group>
+</catalog>

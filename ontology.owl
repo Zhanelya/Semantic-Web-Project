@@ -1,0 +1,523 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#"
+     xml:base="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#cinematographerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#cinematographerOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Cinematographer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#cinematographyBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#cinematographyBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Cinematographer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#cinematographerOf"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#directedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#directedBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Director"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#directorOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#directorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#directorOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#distributedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#distributedBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Distributor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#distributorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#distributorOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Distributor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#filmedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#filmedIn">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#hasActor">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Actor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#playedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#hasMovieLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#hasMovieLanguage">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Language"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#hasMusicBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#hasMusicBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Composer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#landboundary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#landboundary">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#movieLanguageOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#movieLanguageOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Language"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#hasMovieLanguage"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#playedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#playedIn">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#producedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#producedBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Producer"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#producerOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#producerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#producerOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#writerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#writerOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Screenwriter"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#writtenBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#writtenBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Screenwriter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#wroteMusicFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#wroteMusicFor">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Composer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#hasMusicBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#area -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#area">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#areaLand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#areaLand">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#area"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#areaTotal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#areaTotal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#area"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#areaWater -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#areaWater">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#area"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#birthrate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#birthrate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#budget -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#budget">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#capital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#capital">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#climate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#climate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#countryDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#countryDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#description"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#countryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#countryName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#name"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#currency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#currency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#deathrate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#deathrate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#description">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#durationSeconds -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#durationSeconds">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#movieDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#movieDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#description"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#movieName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#movieName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#name"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#name">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#population">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:range rdf:resource="&xsd;long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#timeZone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#timeZone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Cinematographer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Cinematographer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Composer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Composer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Distributor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Distributor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Movie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Screenwriter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Screenwriter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanelya/ontologies/2015/2/untitled-ontology-19#Person"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
