@@ -14,4 +14,4 @@ The ontology is be able to integrate and reuse already available semantic data f
 4. Populated the ontology with information from the second external semantic data repository so that queries to my
 local ontology can answer questions that cannot be answered by either remote knowledge base alone.
 
-For complete documentation, please check the pdf documentation.
+For complete documentation, please check the pdf report.
